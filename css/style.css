@@ -1,4 +1,3 @@
-/* обнуляем встроенные стили */
 *, *::before, *::after {
 	margin: 0;
 	padding: 0;
@@ -10,14 +9,14 @@ ul {
 a {
 	text-decoration: none;  
 }
-/* общие стили */
+
 .visually-hidden {
 	width: 1px;
 	height: 1px;
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute;
 }
-/* подключаем шрифты */
+
 @font-face {
 	font-family: "Open Sans";
 	font-style: normal;
@@ -40,7 +39,7 @@ body {
 	font-family: "Open Sans", "Arial", sans-serif;
 }
 
-/* !стили для header */
+
 .page-header {
 	padding: 30px 0 125px;
 	background-image: url("../img/banner-bg.jpg");
@@ -127,8 +126,6 @@ body {
 	color: #ffffff;
 }
 
-/*бургерное меню сразу для Tablet и Mobile*/
-/* из домашки MQ–2.2. Задача 1 — Мобильное меню */
 @media screen and (max-width: 1199px) {
 	.menu-burger {
 		display: block;
@@ -241,7 +238,7 @@ body {
 	}
 }
 
-/* !стили для pop-up */
+
 .pop-up {
 	position: fixed;
 	top: 0;
@@ -374,7 +371,6 @@ body {
 	}
 }
 
-/* !стили для блока Тренды */
 .trends {
 	max-width: 1660px;
 	margin: 60px auto 0 auto;
@@ -538,7 +534,6 @@ body {
 	}
 }
 
-/* !стили для общего container, содержащего main и aside */
 .container.main-aside {
 	margin-top: 60px;
 	display: flex;
@@ -614,7 +609,7 @@ body {
 	margin-bottom: 10px;
 }
 
-/* !стили для aside */
+
 .container-aside {
 	width: 270px;
 	flex-shrink: 0;
@@ -662,7 +657,7 @@ body {
 	color: #b59f5b;
 }
 
-/* !стили для формы поиска */
+
 .form-search-container {
 	margin-top: 60px;
 }
@@ -700,7 +695,7 @@ body {
 	background-color: black;
 }
 
-/* !стили для формы подписки */
+
 .form-mailing-container {
 	margin-top: 55px;
 }
@@ -738,7 +733,6 @@ body {
 	background-color: black;
 }
 
-/* !стили для раздела Теги */
 .tags-container {
 	margin-top: 50px;
 }
@@ -765,7 +759,7 @@ body {
 	color: #b59f5b;
 }
 
-/* !стили для раздела Темы */
+
 .topics-container {
 	margin-top: 55px;
 }
@@ -877,7 +871,7 @@ body {
 	}
 }
 
-/* !стили для блока Наши изделия */
+
 .product {
 	margin-top: 65px;
 }
@@ -963,7 +957,7 @@ body {
 
 @media screen and (min-width: 1200px) {
 	.product-img-wrp {
-		max-width: 300px; /*только для desctop, чтобы на других девайсах красиво резинилось*/
+		max-width: 300px; 
 	}
 }
 
@@ -997,7 +991,7 @@ body {
 	}
 }
 
-/* !стили для footer */
+
 .page-footer {
 	margin-top: 65px;
 	padding-bottom: 45px;
