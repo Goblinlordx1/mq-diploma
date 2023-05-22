@@ -131,6 +131,7 @@ body {
 /* из домашки MQ–2.2. Задача 1 — Мобильное меню */
 @media screen and (max-width: 1199px) {
 	.menu-burger {
+		display: block;
 		width: 1.25em;
 		height: 1em;  
 		border: none;
@@ -190,9 +191,6 @@ body {
 	.nav-list {
 		display: none;
 	}
-	.logo-mobile {
-		display: none;
-	}
 	.header-title {
 		width: 89%;
 		max-width: 600px;
@@ -224,6 +222,7 @@ body {
 	}
 	.logo-mobile {
 		display: block;
+		text-align: center;
 		width: 75%;
 		margin: 175px auto 0 auto;
 	}
@@ -319,6 +318,7 @@ body {
 .form-textarea {
 	width: 100%;
 	min-height: 100px;
+	resize: none;
 	padding: 10px;
 	margin-top: 10px;
 	font: inherit;
@@ -455,6 +455,9 @@ body {
 .tags-item {
 	margin-right: 20px;
 }
+.tags-item:last-child {
+	margin-right: 0;
+}
 .tags-item-link {
 	font-size: 14px;
 	color: #b59f5b;
@@ -560,9 +563,11 @@ body {
 	width: 23vw; /*иначе реализовать сжимание изо не смогла. если ставлю здесь 100%, то 
 	изо сразу становится меньше заявленных в макете 380px */
 }
+.article-content .tags {
+	margin-bottom: 7px;
+}
 .tags .list-item {
 	margin-right: 20px;
-	margin-bottom: 7px;
 }
 .tags .list-item:last-child {
 	margin-right: 0;
@@ -708,6 +713,8 @@ body {
 	margin-bottom: 20px;
 	border: none;
 	background-color: #f3f2f2;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 }
 .input-mailing:hover,
 .input-mailing:focus {
@@ -993,6 +1000,7 @@ body {
 /* !стили для footer */
 .page-footer {
 	margin-top: 65px;
+	padding-bottom: 45px;
 }
 .footer-container {
 	background-color: #f3f2f2;
@@ -1007,6 +1015,9 @@ body {
 }
 .social-icons-list-item {
 	margin-right: 30px;
+}
+.social-icons-list-item:last-child {
+	margin-right: 0;
 }
 .social-icons-link {
 	display: block;
@@ -1041,9 +1052,8 @@ body {
 	background-size: 100%;
 }
 .copyright-container {
-	display: flex;
-	margin: 70px auto 45px auto;
-	justify-content: center;
+	text-align: center;
+	margin-top: 70px;
 }
 .copyright-link {
 	font-size: 12px;
