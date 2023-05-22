@@ -1,3 +1,4 @@
+/* обнуляем встроенные стили */
 *, *::before, *::after {
 	margin: 0;
 	padding: 0;
@@ -9,14 +10,14 @@ ul {
 a {
 	text-decoration: none;  
 }
-
+/* общие стили */
 .visually-hidden {
 	width: 1px;
 	height: 1px;
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute;
 }
-
+/* подключаем шрифты */
 @font-face {
 	font-family: "Open Sans";
 	font-style: normal;
@@ -39,7 +40,7 @@ body {
 	font-family: "Open Sans", "Arial", sans-serif;
 }
 
-
+/* !стили для header */
 .page-header {
 	padding: 30px 0 125px;
 	background-image: url("../img/banner-bg.jpg");
@@ -126,7 +127,8 @@ body {
 	color: #ffffff;
 }
 
-
+/*бургерное меню сразу для Tablet и Mobile*/
+/* из домашки MQ–2.2. Задача 1 — Мобильное меню */
 @media screen and (max-width: 1199px) {
 	.menu-burger {
 		width: 1.25em;
@@ -240,6 +242,7 @@ body {
 	}
 }
 
+/* !стили для pop-up */
 .pop-up {
 	position: fixed;
 	top: 0;
@@ -254,7 +257,7 @@ body {
 	align-items: center;
 }
 .pop-up-container {
-	position: relative; 
+	position: relative; /*для крестика*/
 	width: 30%;
 	max-width: 700px;
 	padding: 30px 20px;
@@ -371,7 +374,7 @@ body {
 	}
 }
 
-
+/* !стили для блока Тренды */
 .trends {
 	max-width: 1660px;
 	margin: 60px auto 0 auto;
@@ -401,7 +404,7 @@ body {
 	align-items: flex-end;
 	width: calc(25% - 4px);
 	flex-grow: 1;
-	padding: 9% 20px 20px; 
+	padding: 9% 20px 20px; /*9% - чтобы при уменьшее экрана от 1660 к 1200, padding-top уменьшался*/
 	margin-right: 4px;
 	margin-bottom: 4px;
 	background-color: #1c2141;
@@ -532,7 +535,7 @@ body {
 	}
 }
 
-
+/* !стили для общего container, содержащего main и aside */
 .container.main-aside {
 	margin-top: 60px;
 	display: flex;
@@ -554,7 +557,8 @@ body {
 	margin-right: 25px;
 }
 .article-img {
-	width: 23vw; 
+	width: 23vw; /*иначе реализовать сжимание изо не смогла. если ставлю здесь 100%, то 
+	изо сразу становится меньше заявленных в макете 380px */
 }
 .tags .list-item {
 	margin-right: 20px;
@@ -605,7 +609,7 @@ body {
 	margin-bottom: 10px;
 }
 
-
+/* !стили для aside */
 .container-aside {
 	width: 270px;
 	flex-shrink: 0;
@@ -653,7 +657,7 @@ body {
 	color: #b59f5b;
 }
 
-
+/* !стили для формы поиска */
 .form-search-container {
 	margin-top: 60px;
 }
@@ -691,7 +695,7 @@ body {
 	background-color: black;
 }
 
-
+/* !стили для формы подписки */
 .form-mailing-container {
 	margin-top: 55px;
 }
@@ -727,7 +731,7 @@ body {
 	background-color: black;
 }
 
-
+/* !стили для раздела Теги */
 .tags-container {
 	margin-top: 50px;
 }
@@ -754,7 +758,7 @@ body {
 	color: #b59f5b;
 }
 
-
+/* !стили для раздела Темы */
 .topics-container {
 	margin-top: 55px;
 }
@@ -866,7 +870,7 @@ body {
 	}
 }
 
-
+/* !стили для блока Наши изделия */
 .product {
 	margin-top: 65px;
 }
@@ -952,7 +956,7 @@ body {
 
 @media screen and (min-width: 1200px) {
 	.product-img-wrp {
-		max-width: 300px; 
+		max-width: 300px; /*только для desctop, чтобы на других девайсах красиво резинилось*/
 	}
 }
 
@@ -986,7 +990,7 @@ body {
 	}
 }
 
-
+/* !стили для footer */
 .page-footer {
 	margin-top: 65px;
 }
